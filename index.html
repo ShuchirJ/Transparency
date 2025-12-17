@@ -12,6 +12,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <link rel="stylesheet" href="/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+        .bento-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 1rem 1.2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.12); transition: transform .25s ease, border-color .25s ease; backdrop-filter: blur(4px); }
+        .bento-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.2); }
+        .bento-card.wide { grid-column: span 2; }
+        .bento-card.tall { grid-row: span 2; }
+        .bento-card h3 { margin: 0 0 0.35rem; }
+        .bento-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.6rem; }
+    </style>
 </head>
 <body>
     <script>
@@ -44,172 +53,170 @@
         <br><br><br>
         <h2 class="wow fadeIn">Work</h2>
         <p class="wow fadeIn"><span class="p">Community Moderation</span> @ Replit &bull; JAN 22 - JUN 23</p>
-        <p class="wow fadeIn"><span class="p">Contracted Infrastructure Engineer</span> @ Peebles Volunteer Fire Co. &bull; JUN 23 - NOV 23</p>
-        <p class="wow fadeIn"><span class="p">Contracted Software Engineer</span> @ Pendemer Productions &bull; JAN 23 - MAR 23</p>
+        <p class="wow fadeIn"><span class="p">Volunteer Software Engineer</span> @ Peebles Volunteer Fire Co. &bull; JUN 23 - NOV 23</p>
+        <p class="wow fadeIn"><span class="p">Seasonal Software Engineer</span> @ Pendemer Productions &bull; JAN 23 - PRESENT</p>
         <br>
         <h3 class="wow fadeIn">Volunteering and Other Work</h3>
+        <p class="wow fadeIn"><span class="p">Head of Technology and Infrastructure</span> @ Project Water &bull; OCT 22 - PRESENT</p>
         <p class="wow fadeIn"><span class="p">Administrative Officer</span> @ Mathlings &bull; JAN 21 - PRESENT</p>
         <p class="wow fadeIn"><span class="p">Co-Founder, Co-COO</span> @ Palettech &bull; JUN 22 - PRESENT</p>
         <p class="wow fadeIn"><span class="p">Regional Director</span> @ Steel City Codes &bull; FEB 24 - PRESENT</p>
         <p class="wow fadeIn"><span class="p">CIO</span> @ curingwithCARE &bull; MAR 24 - PRESENT</p>
-        <p class="wow fadeIn"><span class="p">Head of Technology and Infrastructure</span> @ Project Water &bull; OCT 22 - PRESENT</p>
         <p class="wow fadeIn"><span class="p">Lead Organizer, Director</span> @ Hack the Grid &bull; MAY 23 - DEC 23</p>
-        <p class="wow fadeIn"><span class="p">Co-Lead Organizer</span> @ Scrapyard Pittsburgh &bull; JAN 25 - PRESENT</p>
         <br>
-        <h4 class="wow fadeIn" style="margin-bottom: 0;">Roles I've held briefly at other organizations:</h4>
-        <div class="container wow fadeIn">
-            <div class="horizontal-scrolling-items">
-                <p>CTO @ Chesspire</p>
-                <p>CTO @ Youth Research Initiative</p>
-                <p>Board Member @ Junior Birding Society</p>
-                <p>CTO @ Teen Research Association</p>
-                <p>CTO @ Chesspire</p>
-                <p>CTO @ Youth Research Initiative</p>
-                <p>Board Member @ Junior Birding Society</p>
-                <p>CTO @ Teen Research Association</p>
-            </div>
-        </div>
-
-        <h4 class="wow fadeIn">Websites I've Designed:</h4>
-        <div class="flex wrap">
-            <a class="wow fadeIn" href="https://jrbirding.org" target="_blank">Junior Birding Society</a>
-            <a class="wow fadeIn" href="https://curingwithcare.org" target="_blank">curingwithCARE</a>
-            <a class="wow fadeIn" href="https://yri.vercel.app" target="_blank">Youth Research Initiative</a>
-            <a class="wow fadeIn" href="https://h2o.shuchir.dev" target="_blank">Project Water</a>
-            <a class="wow fadeIn" href="https://chesspire.org" target="_blank">Chesspire [MAINTAIN ONLY]</a>
-            <a class="wow fadeIn" href="https://htg.shuchir.dev" target="_blank">Hack the Grid</a>
-        </div>
 
         <br><br><br>
         <h2 class="wow fadeIn">Projects</h2>
-        <div class="project-container">
-        <div class="project-outer wow fadeIn">
-            <h3 class="p project">Download Buddy</h3>
-            <div class="flex project">
-                <a href="https://chromewebstore.google.com/detail/download-buddy/fpcjnglmgfimddmpogpgmchjkbjdpiih?authuser=0&hl=en" target="_blank">Chrome/Edge/Brave</a>
-                <a href="https://addons.mozilla.org/en-US/firefox/addon/download-buddy/" target="_blank">Firefox</a>
-                <a href="//github.com/shuchirj/Download-Buddy" target="_blank">Github</a>
-            </div>
-            <p>Convert your images to a friendly format automatically on download. Download Buddy intercepts your image download, converts it to a specified format behind the scenes, then re-downloads it for you.</p>
-            <br>
-        </div>
+        <div class="project-grid">
+            <article class="bento-card wow fadeIn wide">
+                <h3 class="p project">bop</h3>
+                <p>A Bluetooth 4.2 audio receiver with line level dual RCA-out and headphone amp + 3.5mm jack.</p>
+                <div class="bento-links">
+                    <a href="https://oshwlab.com/shuchirj/bop" target="_blank">View on OSHWLab</a>
+                    <a href="//github.com/shuchirj/bop" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">abyss.</h3>
-        <div class="flex project">
-            <a href="//abyss.shuchir.dev" target="_blank">Visit</a>
-            <a href="//github.com/shuchirj/abyss" target="_blank">Github</a>
-        </div>
-        <p>A privacy-friendly digital diary. Includes fernet encryption, increased page visibility options, and zero social features.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">Inviter</h3>
+                <p>Create smooth, reusable invite links for Github organizations.</p>
+                <div class="bento-links">
+                    <a href="https://inviter.shuchir.dev/" target="_blank">Visit</a>
+                    <a href="//github.com/shuchirj/Inviter" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">WheresMyFlight</h3>
-        <div class="flex project">
-            <a href="//github.com/shuchirj/WheresMyFlight" target="_blank">Github + More Info</a>
-        </div>
-        <p>Feature rich cross-platform flight tracking including offline access, SMS updates, bag tracking, seat maps, live positional tracking, and more.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn wide">
+                <h3 class="p project">Download Buddy</h3>
+                <p>Convert your images to a friendly format automatically on download.</p>
+                <div class="bento-links">
+                    <a href="https://chromewebstore.google.com/detail/download-buddy/fpcjnglmgfimddmpogpgmchjkbjdpiih?authuser=0&hl=en" target="_blank">Chrome/Edge/Brave</a>
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/download-buddy/" target="_blank">Firefox</a>
+                    <a href="//github.com/shuchirj/Download-Buddy" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">HCGateway</h3>
-        <div class="flex project">
-            <a href="//hcgateway.shuchir.dev" target="_blank">API Docs</a>
-            <a href="//github.com/shuchirj/HCGateway" target="_blank">Github/Documentation</a>
-        </div>
-        <p>A custom API bridge for Android's Health Connect. Allows developers to access health data RESTfully while creating a universal health API for Fitbit, Strava, Samsung Health, etc. in the process.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">devenv</h3>
+                <p>Simple disposable development environments ready within seconds.</p>
+                <div class="bento-links">
+                    <a href="https://pypi.org/project/devenv-cli/" target="_blank">PyPI</a>
+                    <a href="//github.com/shuchirj/devenv" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">minichef</h3>
-        <div class="flex project">
-            <a href="https://apps.apple.com/us/app/minichef/id6587583006">App Store (iOS)</a>
-            <a href="//github.com/shuchirj/minichef" target="_blank">Github</a>
-        </div>
-        <p>A mobile app for your kitchen. Search recipes online, import one using AI, or create your own recipes. Featuring step-by-step mode, unit conversion access, and grocery lists.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn tall">
+                <h3 class="p project">HCGateway</h3>
+                <p>Custom API bridge for Android Health Connect, exposing health data via REST. Doubles as a universal REST health API.</p>
+                <div class="bento-links">
+                    <a href="//hcgateway.shuchir.dev" target="_blank">API Docs</a>
+                    <a href="//github.com/shuchirj/HCGateway" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">PicoPasswds</h3>
-        <div class="flex project">
-            <a href="//github.com/shuchirj/Self-Destructing-Passwords" target="_blank">Github</a>
-        </div>
-        <p>An experiment in cybersecurity. When you insert a raspberry pi pico (or a rubber ducky) into a laptop with this script, the script automatically grabs your chrome passwords, decrypts them, and sends them to a target via notification.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">WheresMyFlight</h3>
+                <p>Feature-rich flight tracking with offline access, SMS updates, seat maps, and live positioning.</p>
+                <div class="bento-links">
+                    <a href="//github.com/shuchirj/WheresMyFlight" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">NFC Business Cards</h3>
-        <div class="flex project">
-            <a href="https://oshwlab.com/shuchirj/nfc-business-card" target="_blank">Schematics and Design</a>
-        </div>
-        <p>My first attempt at PCB (printed circuit board) fabrication. The project consists of a business card that uses NFC technology. NFC is near field communication, and it means when the card is tapped to a phone, the phone receives (and might open) a custom link stored on the card.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">abyss.</h3>
+                <p>A privacy-friendly digital diary with fernet encryption and zero social features.</p>
+                <div class="bento-links">
+                    <a href="//abyss.shuchir.dev" target="_blank">Visit</a>
+                    <a href="//github.com/shuchirj/abyss" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">organizeAIO</h3>
-        <div class="flex project">
-            <a href="//organizeaio.xyz" target="_blank">Visit</a>
-            <a href="//github.com/shuchirj/organizeAIO" target="_blank">Github</a>
-        </div>
-        <p>Event management platform featuring public event pages, attendee management, custom registration forms, project submission/gallery, judge access, and more.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">Connect-4</h3>
+                <p>It's the classic game of connect 4! The catch? The source fits entirely in a QR code.</p>
+                <div class="bento-links">
+                    <a href="data:text/html;base64,PGNlbnRlcj48ZGl2IGlkPSJjb2luIj48L2Rpdj48YnI+PGRpdiBjbGFzcz0iYm9hcmQiPjwvZGl2PjwvY2VudGVyPjxzY3JpcHQ+bGV0IGJvYXJkPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoIi5ib2FyZCIpLGNvaW49ZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiI2NvaW4iKSxwbGF5ZXJTdGF0ZT0icmVkIix3aW49ITE7Zm9yKGxldCB0PTA7dDw0Mjt0Kyspe2xldCBlPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoImRpdiIpO2UuY2xhc3NMaXN0LmFkZCgiY2VsbCIpLGUuc2V0QXR0cmlidXRlKCJjb2wiLHQlNyksZS5zZXRBdHRyaWJ1dGUoInJvdyIsTWF0aC5mbG9vcih0LzcpKSxlLnNldEF0dHJpYnV0ZSgicGxheWVyIiwibm9uZSIpLGUuYWRkRXZlbnRMaXN0ZW5lcigibW91c2VvdmVyIiwoKCk9Pnt3aW58fGNvaW4uc2V0QXR0cmlidXRlKCJzdHlsZSIsYGJhY2tncm91bmQtY29sb3I6ICR7cGxheWVyU3RhdGV9OyB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoJHs5MCotKDMtTnVtYmVyKGUuZ2V0QXR0cmlidXRlKCJjb2wiKSkpfXB4KTsgb3BhY2l0eTogMTtgKX0pKSxlLmFkZEV2ZW50TGlzdGVuZXIoIm1vdXNlb3V0IiwoKCk9Pntjb2luLnNldEF0dHJpYnV0ZSgic3R5bGUiLCJvcGFjaXR5OiAwOyIpfSkpLGUuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCgoKT0+e2lmKHdpbilyZXR1cm47bGV0IHQ9TnVtYmVyKGUuZ2V0QXR0cmlidXRlKCJjb2wiKSkscj0oTnVtYmVyKGUuZ2V0QXR0cmlidXRlKCJyb3ciKSksZS5nZXRBdHRyaWJ1dGUoInBsYXllciIpLDApO2Zvcig7cjw1JiYibm9uZSI9PT1ib2FyZC5xdWVyeVNlbGVjdG9yKGBbY29sPSIke3R9Il1bcm93PSIke3IrMX0iXWApLmdldEF0dHJpYnV0ZSgicGxheWVyIik7KXIrKztsZXQgbz1ib2FyZC5xdWVyeVNlbGVjdG9yKGBbY29sPSIke3R9Il1bcm93PSIke3J9Il1gKTtvLnNldEF0dHJpYnV0ZSgicGxheWVyIixwbGF5ZXJTdGF0ZSk7Zm9yKGxldCBlPTA7ZTw5MCoocisxKSs0MDtlKyspc2V0VGltZW91dCgoKCk9Pntjb2luLnNldEF0dHJpYnV0ZSgic3R5bGUiLGBiYWNrZ3JvdW5kLWNvbG9yOiAke3BsYXllclN0YXRlfTsgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKCR7OTAqLSgzLXQpfXB4KSB0cmFuc2xhdGVZKCR7ZX1weCk7IG9wYWNpdHk6IDE7YCl9KSwyKmUpO3NldFRpbWVvdXQoKCgpPT57Y29pbi5zZXRBdHRyaWJ1dGUoInN0eWxlIiwib3BhY2l0eTogMDsiKSxvLnN0eWxlLmJhY2tncm91bmRDb2xvcj1wbGF5ZXJTdGF0ZSxwbGF5ZXJTdGF0ZT0icmVkIj09PXBsYXllclN0YXRlPyJ5ZWxsb3ciOiJyZWQiLGNoZWNrV2lubmVyKCl9KSwyKig5MCoocisxKSs0MCkpfSkpLGJvYXJkLmFwcGVuZENoaWxkKGUpfWNvbnN0IGNoZWNrV2lubmVyPSgpPT57Ym9hcmQucXVlcnlTZWxlY3RvckFsbCgiLmNlbGwiKS5mb3JFYWNoKCh0PT57bGV0IGU9TnVtYmVyKHQuZ2V0QXR0cmlidXRlKCJjb2wiKSkscj1OdW1iZXIodC5nZXRBdHRyaWJ1dGUoInJvdyIpKSxvPVt0XTtbWzEsMF0sWzAsMV0sWzEsMV0sWy0xLDFdXS5mb3JFYWNoKChsPT57Zm9yKGxldCBhPTE7YTw0JiYoMDw9ZSthKmxbMF0mJmUrYSpsWzBdPDcmJjA8PXIrYSpsWzFdJiZyK2EqbFsxXTw2KTthKyspe2xldCBjPWJvYXJkLnF1ZXJ5U2VsZWN0b3IoYFtjb2w9IiR7ZSthKmxbMF19Il1bcm93PSIke3IrYSpsWzFdfSJdYCk7Yy5nZXRBdHRyaWJ1dGUoInBsYXllciIpPT10LmdldEF0dHJpYnV0ZSgicGxheWVyIikmJm8ucHVzaChjKX00PT09by5sZW5ndGgmJiJub25lIiE9PW9bMF0uZ2V0QXR0cmlidXRlKCJwbGF5ZXIiKSYmKG8uZm9yRWFjaCgodD0+e3Quc3R5bGUuYmFja2dyb3VuZENvbG9yPSJibGFjayJ9KSksYWxlcnQoYCR7b1swXS5nZXRBdHRyaWJ1dGUoInBsYXllciIpfSB3aW5zIWApLHdpbj0hMCksbz1bdF19KSl9KSl9Ozwvc2NyaXB0PjxzdHlsZT4uYm9hcmR7ZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoNywxZnIpO2dyaWQtZ2FwOjEwcHg7d2lkdGg6NjMwcHg7aGVpZ2h0OjU0MHB4O2JvcmRlci1yYWRpdXM6MTBweDtiYWNrZ3JvdW5kLWNvbG9yOiMxYzYyZjE7cGFkZGluZzoxMHB4fSNjb2luLC5jZWxse2JvcmRlci1yYWRpdXM6NTAlfSNjb2lue3dpZHRoOjkwcHg7aGVpZ2h0OjkwcHg7b3BhY2l0eTowfS5jZWxse2N1cnNvcjpwb2ludGVyO2JhY2tncm91bmQtY29sb3I6I2ZmZn08L3N0eWxlPg==" target="_blank">Play</a>
+                    <a href="//github.com/shuchirj/connect-4" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">StudentMate [UNMAINTAINED]</h3>
-        <div class="flex project">
-            <a href="//studentmate.shuchir.dev" target="_blank">Visit</a>
-            <a href="//github.com/shuchirj/StudentMate" target="_blank">Github</a>
-        </div>
-        <p>Originally built for NASD's Blackboard Learn, StudentMate connects to an LMS and pulls assignments using AI to create smart reminders.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">minichef</h3>
+                <p>Search, import, and create recipes with step-by-step mode and grocery lists.</p>
+                <div class="bento-links">
+                    <a href="https://apps.apple.com/us/app/minichef/id6587583006" target="_blank">App Store (iOS)</a>
+                    <a href="//github.com/shuchirj/minichef" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">SearchDeck [UM]</h3>
-        <div class="flex project">
-            <a href="//searchdeck.shuchir.dev" target="_blank">Visit</a>
-            <a href="//github.com/shuchirj/SearchDeck" target="_blank">Github</a>
-        </div>
-        <p>A smart search engine which compiles results from the 4 major search engines to provide access to a wide range of data in one place.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">PicoPasswds</h3>
+                <p>Raspberry Pi Pico payload to capture, decrypt, and exfiltrate Chrome passwords.</p>
+                <div class="bento-links">
+                    <a href="//github.com/shuchirj/Self-Destructing-Passwords" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">Climalearn [UM]</h3>
-        <div class="flex project">
-            <a href="//climalearn.shuchir.dev" target="_blank">Visit</a>
-            <a href="//github.com/shuchirj/Climalearn" target="_blank">Github</a>
-        </div>
-        <p>Easily see how climate change is adversely affecting the Earth and find out what you can do to stop it. Aggregates data directly from sources like NASA, NOAA, and Google's Project Sunroof.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">NFC Business Cards</h3>
+                <p>PCB business card using NFC to share custom links when tapped to a phone.</p>
+                <div class="bento-links">
+                    <a href="https://oshwlab.com/shuchirj/nfc-business-card" target="_blank">Schematics and Design</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">MyT1D</h3>
-        <div class="flex project">
-            <a href="//github.com/shuchirj/MyT1D" target="_blank">Github</a>
-        </div>
-        <p>A mobile application to assist recently diagnosed T1D patients. Allows patients to calculate insulin dosages, apply correction factors directly from their CGM and more.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn tall">
+                <h3 class="p project">organizeAIO</h3>
+                <p>Manage public event pages, attendees, registration forms, project galleries, and judges.</p>
+                <div class="bento-links">
+                    <a href="//organizeaio.org" target="_blank">Visit</a>
+                    <a href="//github.com/shuchirj/organizeAIO" target="_blank">Github</a>
+                </div>
+            </article>
 
-        <div class="project-outer wow fadeIn">
-        <h3 class="p project">Crinkle</h3>
-        <div class="flex project">
-            <a href="//url.shuchir.dev" target="_blank">Visit</a>
-            <a href="//github.com/shuchirj/Crinkle" target="_blank">Github</a>
-        </div>
-        <p>A feature rich URL shortener featuring geolocation data, qr codes, browser/device/os data collection, referrer collection, custom domains, and more.</p>
-        <br>
-        </div>
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">StudentMate</h3>
+                <p>Connects to an LMS and uses AI to pull assignments and create smart reminders.</p>
+                <div class="bento-links">
+                    <a href="//studentmate.shuchir.dev" target="_blank">Visit</a>
+                    <a href="//github.com/shuchirj/StudentMate" target="_blank">Github</a>
+                </div>
+            </article>
 
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">SearchDeck</h3>
+                <p>Aggregates results from major search engines to surface wide-ranging data in one place.</p>
+                <div class="bento-links">
+                    <a href="//searchdeck.shuchir.dev" target="_blank">Visit</a>
+                    <a href="//github.com/shuchirj/SearchDeck" target="_blank">Github</a>
+                </div>
+            </article>
+
+            <article class="bento-card wow fadeIn wide">
+                <h3 class="p project">Climalearn</h3>
+                <p>Visualizes climate impacts with data from NASA, NOAA, and Project Sunroof and shares actions to take.</p>
+                <div class="bento-links">
+                    <a href="//climalearn.shuchir.dev" target="_blank">Visit</a>
+                    <a href="//github.com/shuchirj/Climalearn" target="_blank">Github</a>
+                </div>
+            </article>
+
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">MyT1D</h3>
+                <p>Helps recently diagnosed T1D patients calculate insulin dosages and apply correction factors.</p>
+                <div class="bento-links">
+                    <a href="//github.com/shuchirj/MyT1D" target="_blank">Github</a>
+                </div>
+            </article>
+
+            <article class="bento-card wow fadeIn">
+                <h3 class="p project">Crinkle</h3>
+                <p>Feature-rich shortener with geolocation, QR codes, device/browser insights, and custom domains.</p>
+                <div class="bento-links">
+                    <a href="//url.shuchir.dev" target="_blank">Visit</a>
+                    <a href="//github.com/shuchirj/Crinkle" target="_blank">Github</a>
+                </div>
+            </article>
         </div>
     </div>
 </body>
